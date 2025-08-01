@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">login_Screen</string>
+    <string name="image_desc">Tree Image</string>
+    <string name="login_text">LOGIN</string>
+    <string name="username_text">Username</string>
+    <string name="password_text">Password</string>
+
+
+
+
+</resources>

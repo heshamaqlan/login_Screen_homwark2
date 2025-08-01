@@ -1,0 +1,31 @@
+                                                   ATTENTION
+
+Viewer is NOT recommended for diagnostic interpretation.
+
+
+                                      SOFTWARE LICENSE AGREEMENT
+
+HITACHI MEDICAL CORPORATION ("HMC") IS WILLING TO LICENSE THE SOFTWARE TO YOU ONLY UPON THE CONDITION THAT YOU ACCEPT ALL OF THE TERMS CONTAINED IN THIS SOFTWARE LICENSE AGREEMENT ("AGREEMENT").  PLEASE READ THE AGREEMENT CAREFULLY.  BY DOWNLOADING OR INSTALLING THIS SOFTWRE, YOU ACCEPT THE TERMS OF THE AGREEMENT.  INDICATE ACCEPTANCE BY SELECTING THE "ACCEPT" BUTTON AT THE BOTTOM OF THE AGREEMENT.  IF YOU ARE NOT WILLING TO BE BOUND BY ALL THE TERMS, SELECT THE "DECLINE" BUTTON AT THE BOTTOM OF THE AGREEMENT AND THE DOWNLOAD OR INSTALL PROCESS WILL NOT CONTINUE.
+
+1. GRANT OF RIGHTS 
+  (1) Subject to the terms and conditions of this AGREEMENT, HMC grants you a non-exclusive, non-transferable, limited license without license fees to use the SOFTWARE for the sole purpose of running programs of the SOFTWARE. 
+  (2) The SOFTWARE is protected by copyright laws and international copyright treaties, as well as other intellectual property laws and treaties.  The SOFTWARE is licensed, not sold.
+  (3) You are not allowed to re-license, transfer, disseminate, lend or exploit the whole or a part of the SOFTWARE to a third party.
+  (4) You may not reverse engineer, decompile, or disassemble the SOFTWARE.
+
+2. COPY
+  You are allowed to make a copy of the SOFTWARE solely for making the back-up copy subject to the Licensee handling the copy in the same manner as to handle the original SOFTWARE.  However, the customer is not allowed to make a copy of the SOFTWARE for any purpose other than making a backup copy in any way.
+
+3. DISCLAIMER OF WARRANTY
+  UNLESS SPECIFIED IN THIS AGREEMENT, ALL EXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING ANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT ARE DISCLAIMED, EXCEPT TO THE EXTENT THAT THESE DISCLAIMERS ARE HELD TO BE LIGALLY INVALID.
+
+  TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT WILL HMC OR ITS LICENSORS BE LIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR SPECIAL, INDIRECT, CONSEUENTIAL, INCIDENTAL OR UPNITIVE DAMAGES, HOWEVER CAUSED REGARDLESS OF THE TEHORY OF LIABILITY, ARISING OUT OF OR RELATED TO THE USE OF OR INABLITITY TO USE SOFTWARE, EVEN IF HMC HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+4. TERMINATION
+  This AGREEMENT is effective until terminated.  This AGREEMENT will terminate immediately without notice from HMC if you fail to comply with any provision of this AGREEMENT.  Upon Termination, you must destroy all copies of SOFTWARE.
+
+5. EXPORT REGULATIONS
+  All SOFTWARE and technical data delivered under this AGREEMENT are subject to Japanese export control laws and may be subject to export or import regulations in other countries.  You agree to comply strictly with all such laws and regulations and acknowledge that you have the responsibility to obtain such licenses to export, re-export, or import as may be required after delivery to you.
+
+6. OTHER
+  Any rights not specified in this AGREEMENT shall be retained in HMC.

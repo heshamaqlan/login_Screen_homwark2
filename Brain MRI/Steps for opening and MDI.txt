@@ -1,0 +1,3 @@
+Go to the viewer, then to the DCMVIWE application, click on it and open
+
+If you cannot open the login, press the right button and click on the Run as AdminiStrator option

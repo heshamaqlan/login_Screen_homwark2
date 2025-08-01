@@ -1,0 +1,3075 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=shift_jis">
+<!-- <meta name=Generator content="Microsoft Word 11 (filtered)"> -->
+<title>DICOMビューワ&nbsp;使用説明書</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"ＭＳ 明朝";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:"ＭＳ ゴシック";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:"MS UI Gothic";
+	panose-1:2 11 6 0 7 2 5 8 2 4;}
+@font-face
+	{font-family:"ＭＳ Ｐゴシック";
+	panose-1:2 11 6 0 7 2 5 8 2 4;}
+@font-face
+	{font-family:"\@ＭＳ ゴシック";
+	panose-1:2 11 6 9 7 2 5 8 2 4;}
+@font-face
+	{font-family:"\@ＭＳ 明朝";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:"\@ＭＳ Ｐゴシック";
+	panose-1:2 11 6 0 7 2 5 8 2 4;}
+@font-face
+	{font-family:"\@MS UI Gothic";
+	panose-1:2 11 6 0 7 2 5 8 2 4;}
+@font-face
+	{font-family:HG丸ｺﾞｼｯｸM-PRO;
+	panose-1:2 15 6 9 0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@HG丸ｺﾞｼｯｸM-PRO";
+	panose-1:2 15 6 9 0 0 0 0 0 0;}
+@font-face
+	{font-family:Times;
+	panose-1:2 2 6 3 5 4 5 2 3 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+h1
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:22.0pt;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:Arial;
+	letter-spacing:.2pt;
+	font-weight:normal;
+	text-decoration:underline;}
+h2
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:6.0pt;
+	margin-left:0mm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:Arial;
+	letter-spacing:.2pt;
+	font-weight:normal;}
+h3
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:Arial;
+	letter-spacing:.2pt;
+	font-weight:normal;}
+h4
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:49.65pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-35.45pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;
+	font-weight:normal;}
+h5
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:106.3pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-21.25pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;
+	font-weight:normal;}
+h6
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:127.55pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-21.25pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;
+	font-weight:normal;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:148.75pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-21.25pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:170.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-21.25pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:191.25pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-21.25pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoIndex1, li.MsoIndex1, div.MsoIndex1
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:10.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-10.0pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoIndex2, li.MsoIndex2, div.MsoIndex2
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:20.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-10.0pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoIndex3, li.MsoIndex3, div.MsoIndex3
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:30.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-10.0pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoIndex4, li.MsoIndex4, div.MsoIndex4
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:40.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-10.0pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoIndex5, li.MsoIndex5, div.MsoIndex5
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:50.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-10.0pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoIndex6, li.MsoIndex6, div.MsoIndex6
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:60.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-10.0pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoIndex7, li.MsoIndex7, div.MsoIndex7
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:70.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-10.0pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoIndex8, li.MsoIndex8, div.MsoIndex8
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:80.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-10.0pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoIndex9, li.MsoIndex9, div.MsoIndex9
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:90.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-10.0pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:10.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:20.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:30.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:40.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:50.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:60.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:70.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:80.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoNormalIndent, li.MsoNormalIndent, div.MsoNormalIndent
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:42.55pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:left;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	layout-grid-mode:char;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:left;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	layout-grid-mode:char;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	layout-grid-mode:char;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoIndexHeading, li.MsoIndexHeading, div.MsoIndexHeading
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Arial;
+	letter-spacing:.2pt;
+	font-weight:bold;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:6.0pt;
+	margin-right:0mm;
+	margin-bottom:12.0pt;
+	margin-left:0mm;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;
+	font-weight:bold;}
+p.MsoTof, li.MsoTof, div.MsoTof
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:42.5pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-21.25pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoEnvelopeAddress, li.MsoEnvelopeAddress, div.MsoEnvelopeAddress
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:50.0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	layout-grid-mode:char;
+	font-size:12.0pt;
+	font-family:Arial;
+	letter-spacing:.2pt;}
+p.MsoEnvelopeReturn, li.MsoEnvelopeReturn, div.MsoEnvelopeReturn
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	layout-grid-mode:char;
+	font-size:10.0pt;
+	font-family:Arial;
+	letter-spacing:.2pt;}
+p.MsoEndnoteText, li.MsoEndnoteText, div.MsoEndnoteText
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:left;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	layout-grid-mode:char;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoToa, li.MsoToa, div.MsoToa
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:10.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-10.0pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoMacroText, li.MsoMacroText, div.MsoMacroText
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:left;
+	line-height:normal;
+	page-break-after:avoid;
+	layout-grid-mode:char;
+	punctuation-wrap:simple;
+	text-autospace:none;
+	font-size:9.0pt;
+	font-family:"Courier New";
+	letter-spacing:.2pt;}
+p.MsoToaHeading, li.MsoToaHeading, div.MsoToaHeading
+	{margin-top:9.0pt;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:Arial;
+	letter-spacing:.2pt;}
+p.MsoList, li.MsoList, div.MsoList
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:21.25pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-21.25pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoListBullet, li.MsoListBullet, div.MsoListBullet
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-18.0pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoListNumber, li.MsoListNumber, div.MsoListNumber
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-18.0pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoList2, li.MsoList2, div.MsoList2
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:42.55pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-21.25pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoList3, li.MsoList3, div.MsoList3
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:63.8pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-21.25pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoList4, li.MsoList4, div.MsoList4
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:30.0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-21.25pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoList5, li.MsoList5, div.MsoList5
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:106.3pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-21.25pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoListBullet2, li.MsoListBullet2, div.MsoListBullet2
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:39.25pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-18.0pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoListBullet3, li.MsoListBullet3, div.MsoListBullet3
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:60.55pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-18.0pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoListBullet4, li.MsoListBullet4, div.MsoListBullet4
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:81.8pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-18.0pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoListBullet5, li.MsoListBullet5, div.MsoListBullet5
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:103.05pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-18.0pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoListNumber2, li.MsoListNumber2, div.MsoListNumber2
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:39.25pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-18.0pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoListNumber3, li.MsoListNumber3, div.MsoListNumber3
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:60.55pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-18.0pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoListNumber4, li.MsoListNumber4, div.MsoListNumber4
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:81.8pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-18.0pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoListNumber5, li.MsoListNumber5, div.MsoListNumber5
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:103.05pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-18.0pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin-top:12.0pt;
+	margin-right:0mm;
+	margin-bottom:6.0pt;
+	margin-left:0mm;
+	text-align:center;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:Arial;
+	letter-spacing:.2pt;}
+p.MsoClosing, li.MsoClosing, div.MsoClosing
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoSignature, li.MsoSignature, div.MsoSignature
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:right;
+	line-height:15.0pt;
+	page-break-after:auto;
+	text-autospace:none;
+	font-size:10.0pt;
+	font-family:Century;
+	color:black;
+	letter-spacing:0pt;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:42.55pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoListContinue, li.MsoListContinue, div.MsoListContinue
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:9.0pt;
+	margin-left:21.25pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoListContinue2, li.MsoListContinue2, div.MsoListContinue2
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:9.0pt;
+	margin-left:42.5pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoListContinue3, li.MsoListContinue3, div.MsoListContinue3
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:9.0pt;
+	margin-left:63.75pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoListContinue4, li.MsoListContinue4, div.MsoListContinue4
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:9.0pt;
+	margin-left:85.0pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoListContinue5, li.MsoListContinue5, div.MsoListContinue5
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:9.0pt;
+	margin-left:106.25pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoMessageHeader, li.MsoMessageHeader, div.MsoMessageHeader
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:42.55pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-42.55pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	background:#CCCCCC;
+	font-size:12.0pt;
+	font-family:Arial;
+	letter-spacing:.2pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:Arial;
+	letter-spacing:.2pt;}
+p.MsoSalutation, li.MsoSalutation, div.MsoSalutation
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoDate, li.MsoDate, div.MsoDate
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoBodyTextFirstIndent, li.MsoBodyTextFirstIndent, div.MsoBodyTextFirstIndent
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:10.5pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoBodyTextFirstIndent2, li.MsoBodyTextFirstIndent2, div.MsoBodyTextFirstIndent2
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:42.55pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:10.5pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoNoteHeading, li.MsoNoteHeading, div.MsoNoteHeading
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoBodyText2, li.MsoBodyText2, div.MsoBodyText2
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:normal;
+	page-break-after:auto;
+	font-size:9.0pt;
+	font-family:"MS UI Gothic";
+	letter-spacing:0pt;}
+p.MsoBodyText3, li.MsoBodyText3, div.MsoBodyText3
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:8.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:42.55pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:200%;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:42.55pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:8.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.MsoBlockText, li.MsoBlockText, div.MsoBlockText
+	{margin-top:0mm;
+	margin-right:72.0pt;
+	margin-bottom:0mm;
+	margin-left:72.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	background:navy;
+	font-size:10.0pt;
+	font-family:Arial;
+	letter-spacing:.2pt;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.5pt;
+	font-family:"ＭＳ 明朝";
+	letter-spacing:.2pt;}
+p.MsoAutoSig, li.MsoAutoSig, div.MsoAutoSig
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	letter-spacing:.2pt;}
+address
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;
+	font-style:italic;}
+pre
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	letter-spacing:.2pt;}
+p.11, li.11, div.11
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:42.55pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-21.25pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.110, li.110, div.110
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:10.0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.111, li.111, div.111
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:49.65pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-21.3pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.112, li.112, div.112
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:49.6pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-21.25pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.1110, li.1110, div.1110
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:49.65pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:-21.25pt;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.1, li.1, div.1
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:21.3pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Times;
+	letter-spacing:.2pt;}
+p.10, li.10, div.10
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Arial;
+	letter-spacing:.2pt;}
+p.12, li.12, div.12
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	line-height:18.0pt;
+	page-break-after:avoid;
+	font-size:10.0pt;
+	font-family:Arial;
+	letter-spacing:.2pt;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.9pt 42.55pt 20.0mm 70.9pt;
+	layout-grid:18.0pt;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0mm;}
+ul
+	{margin-bottom:0mm;}
+-->
+</style>
+
+</head>
+
+<body lang=JA link=blue vlink=purple style='text-justify-trim:punctuation'>
+
+<div class=Section1 style='layout-grid:18.0pt'>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal;
+text-autospace:none'><a name="_Toc149107983"></a><a name="_Toc149104895"></a><a
+name="_Toc149104556"><b><span lang=EN-US style='font-size:20.0pt;font-family:
+Arial;letter-spacing:0pt'>DICOM VIEWER</span></b></a><b><span lang=EN-US
+style='font-size:20.0pt;font-family:Arial'> </span></b><b><span
+style='font-size:20.0pt;font-family:"ＭＳ Ｐゴシック";letter-spacing:5.0pt'>ヘルプ</span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:normal;
+text-autospace:none'><span style='font-size:12.0pt;font-family:"ＭＳ ゴシック";
+color:black'>株式会社　日立メディコ</span></p>
+
+<p class=MsoNormal align=center style='text-align:center;line-height:15.0pt;
+page-break-after:auto'><span lang=EN-US style='font-size:8.0pt;font-family:
+Arial;color:black'>Copyright &copy; Hitachi Medical Corporation. 2004-2010. All
+rights reserved.</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;line-height:normal;
+page-break-after:auto'><span lang=EN-US style='font-size:12.0pt;font-family:
+Arial;letter-spacing:0pt'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<p class=MsoNormal style='page-break-after:auto'><b><span style='font-size:
+11.0pt;font-family:"ＭＳ Ｐゴシック"'>【目次】</span></b></p>
+
+<p class=MsoToc1></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US style='font-family:
+Arial'><a href="#_Toc149107984"><b>1</b><span style='font-size:10.5pt;
+color:windowtext;letter-spacing:0pt;text-decoration:none'>&nbsp;&nbsp;&nbsp;&nbsp; </span><b>DICOM
+VIEWER</b><b><span lang=EN-US style='font-family:"ＭＳ Ｐゴシック"'><span lang=EN-US>概要</span></span></b><span
+style='color:windowtext;display:none;text-decoration:none'>... </span><span
+style='color:windowtext;display:none;text-decoration:none'>1</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US style='font-family:
+Arial'><a href="#_Toc149107985"><b>2</b><span style='font-size:10.5pt;
+color:windowtext;letter-spacing:0pt;text-decoration:none'>&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+lang=EN-US style='font-family:"ＭＳ Ｐゴシック"'><span lang=EN-US>画像の表示に使用可能な</span></span>PC</b><span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>2</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US style='font-family:
+Arial'><a href="#_Toc149107986"><b>3</b><span style='font-size:10.5pt;
+color:windowtext;letter-spacing:0pt;text-decoration:none'>&nbsp;&nbsp;&nbsp;&nbsp; </span><b>DICOM
+VIEWER</b><b><span lang=EN-US style='font-family:"ＭＳ Ｐゴシック"'><span lang=EN-US>の起動</span></span></b><span
+style='color:windowtext;display:none;text-decoration:none'>... </span><span
+style='color:windowtext;display:none;text-decoration:none'>2</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US style='font-family:
+Arial'><a href="#_Toc149107987"><b>4</b><span style='font-size:10.5pt;
+color:windowtext;letter-spacing:0pt;text-decoration:none'>&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+lang=EN-US style='font-family:"ＭＳ Ｐゴシック"'><span lang=EN-US>画像の表示</span></span></b><span
+style='color:windowtext;display:none;text-decoration:none'>... </span><span
+style='color:windowtext;display:none;text-decoration:none'>4</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US style='font-family:
+Arial'><a href="#_Toc149107988"><b>5</b><span style='font-size:10.5pt;
+color:windowtext;letter-spacing:0pt;text-decoration:none'>&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+lang=EN-US style='font-family:"ＭＳ Ｐゴシック"'><span lang=EN-US>画像ごとに読み込む場合</span></span></b><span
+style='color:windowtext;display:none;text-decoration:none'>... </span><span
+style='color:windowtext;display:none;text-decoration:none'>5</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US style='font-family:
+Arial'><a href="#_Toc149107989"><b>6</b><span style='font-size:10.5pt;
+color:windowtext;letter-spacing:0pt;text-decoration:none'>&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+lang=EN-US style='font-family:"ＭＳ Ｐゴシック"'><span lang=EN-US>別のドライブの画像を読み込む場合</span></span></b><span
+style='color:windowtext;display:none;text-decoration:none'>... </span><span
+style='color:windowtext;display:none;text-decoration:none'>6</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US style='font-family:
+Arial'><a href="#_Toc149107990"><b>7</b><span style='font-size:10.5pt;
+color:windowtext;letter-spacing:0pt;text-decoration:none'>&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+lang=EN-US style='font-family:"ＭＳ Ｐゴシック"'><span lang=EN-US>画像のスクロール</span></span></b><span
+style='color:windowtext;display:none;text-decoration:none'>... </span><span
+style='color:windowtext;display:none;text-decoration:none'>6</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US style='font-family:
+Arial'><a href="#_Toc149107991"><b>8</b><span style='font-size:10.5pt;
+color:windowtext;letter-spacing:0pt;text-decoration:none'>&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+lang=EN-US style='font-family:"ＭＳ Ｐゴシック"'><span lang=EN-US>画像上に表示される情報</span></span></b><span
+style='color:windowtext;display:none;text-decoration:none'>... </span><span
+style='color:windowtext;display:none;text-decoration:none'>6</span></a></span></span></p>
+
+<p class=MsoToc3><span class=MsoHyperlink><span lang=EN-US style='font-family:
+Arial'><a href="#_Toc149107992"><b>8.1</b><span style='font-size:10.5pt;
+color:windowtext;letter-spacing:0pt;text-decoration:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+lang=EN-US style='font-family:"ＭＳ Ｐゴシック"'><span lang=EN-US>オリエンテーションマーカー</span></span></b><span
+style='color:windowtext;display:none;text-decoration:none'>.. </span><span
+style='color:windowtext;display:none;text-decoration:none'>8</span></a></span></span></p>
+
+<p class=MsoToc3><span class=MsoHyperlink><span lang=EN-US style='font-family:
+Arial'><a href="#_Toc149107993"><b>8.2</b><span style='font-size:10.5pt;
+color:windowtext;letter-spacing:0pt;text-decoration:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+lang=EN-US style='font-family:"ＭＳ Ｐゴシック"'><span lang=EN-US>スケーラー</span></span></b><span
+style='color:windowtext;display:none;text-decoration:none'>.. </span><span
+style='color:windowtext;display:none;text-decoration:none'>9</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US style='font-family:
+Arial'><a href="#_Toc149107994"><b>9</b><span style='font-size:10.5pt;
+color:windowtext;letter-spacing:0pt;text-decoration:none'>&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+lang=EN-US style='font-family:"ＭＳ Ｐゴシック"'><span lang=EN-US>ウィンドウ幅、ウィンドウレベルの設定</span></span></b><span
+style='color:windowtext;display:none;text-decoration:none'>... </span><span
+style='color:windowtext;display:none;text-decoration:none'>10</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US style='font-family:
+Arial'><a href="#_Toc149107995"><b>10</b><span style='font-size:10.5pt;
+color:windowtext;letter-spacing:0pt;text-decoration:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+lang=EN-US style='font-family:"ＭＳ Ｐゴシック"'><span lang=EN-US>拡大・縮小の設定</span></span></b><span
+style='color:windowtext;display:none;text-decoration:none'>... </span><span
+style='color:windowtext;display:none;text-decoration:none'>11</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US style='font-family:
+Arial'><a href="#_Toc149107996"><b>11</b><span style='font-size:10.5pt;
+color:windowtext;letter-spacing:0pt;text-decoration:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+lang=EN-US style='font-family:"ＭＳ Ｐゴシック"'><span lang=EN-US>画像の移動</span></span></b><span
+style='color:windowtext;display:none;text-decoration:none'>... </span><span
+style='color:windowtext;display:none;text-decoration:none'>12</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US style='font-family:
+Arial'><a href="#_Toc149107997"><b>12</b><span style='font-size:10.5pt;
+color:windowtext;letter-spacing:0pt;text-decoration:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+lang=EN-US style='font-family:"ＭＳ Ｐゴシック"'><span lang=EN-US>画像の設定を元にもどす</span></span></b><span
+style='color:windowtext;display:none;text-decoration:none'>.. </span><span
+style='color:windowtext;display:none;text-decoration:none'>12</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US style='font-family:
+Arial'><a href="#_Toc149107998"><b>13</b><span style='font-size:10.5pt;
+color:windowtext;letter-spacing:0pt;text-decoration:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+lang=EN-US style='font-family:"ＭＳ Ｐゴシック"'><span lang=EN-US>全ての画像に対して設定する</span></span></b><span
+style='color:windowtext;display:none;text-decoration:none'>.. </span><span
+style='color:windowtext;display:none;text-decoration:none'>13</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US style='font-family:
+Arial'><a href="#_Toc149107999"><b>14</b><span style='font-size:10.5pt;
+color:windowtext;letter-spacing:0pt;text-decoration:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+lang=EN-US style='font-family:"ＭＳ Ｐゴシック"'><span lang=EN-US>表示レイアウトの変更</span></span></b><span
+style='color:windowtext;display:none;text-decoration:none'>... </span><span
+style='color:windowtext;display:none;text-decoration:none'>13</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US style='font-family:
+Arial'><a href="#_Toc149108000"><b>15</b><span style='font-size:10.5pt;
+color:windowtext;letter-spacing:0pt;text-decoration:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+lang=EN-US style='font-family:"ＭＳ Ｐゴシック"'><span lang=EN-US>バージョン情報</span></span></b><span
+style='color:windowtext;display:none;text-decoration:none'>... </span><span
+style='color:windowtext;display:none;text-decoration:none'>14</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US style='font-family:
+Arial'><a href="#_Toc149108001"><b>16</b><span style='font-size:10.5pt;
+color:windowtext;letter-spacing:0pt;text-decoration:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+lang=EN-US style='font-family:"ＭＳ Ｐゴシック"'><span lang=EN-US>ヘルプ（使用説明書）</span></span></b><span
+style='color:windowtext;display:none;text-decoration:none'>. </span><span
+style='color:windowtext;display:none;text-decoration:none'>14</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US style='font-family:
+Arial'><a href="#_Toc149108002"><b>17</b><span style='font-size:10.5pt;
+color:windowtext;letter-spacing:0pt;text-decoration:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b>DICOM
+VIEWER</b><b><span lang=EN-US style='font-family:"ＭＳ Ｐゴシック"'><span lang=EN-US>の終了</span></span></b><span
+style='color:windowtext;display:none;text-decoration:none'>... </span><span
+style='color:windowtext;display:none;text-decoration:none'>15</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US style='font-family:
+Arial'><a href="#_Toc149108003"><b>18</b><span style='font-size:10.5pt;
+color:windowtext;letter-spacing:0pt;text-decoration:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b><span
+lang=EN-US style='font-family:"ＭＳ Ｐゴシック"'><span lang=EN-US>画面のコピーについて</span></span></b><span
+style='color:windowtext;display:none;text-decoration:none'>.. </span><span
+style='color:windowtext;display:none;text-decoration:none'>15</span></a></span></span></p>
+
+<p class=MsoToc2><span class=MsoHyperlink><span lang=EN-US style='font-family:
+Arial'><a href="#_Toc149108004"><b>19</b><span style='font-size:10.5pt;
+color:windowtext;letter-spacing:0pt;text-decoration:none'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><b>DICOM
+VIEWER</b><b><span lang=EN-US style='font-family:"ＭＳ Ｐゴシック"'><span lang=EN-US>のエラーメッセージ</span></span></b><span
+style='color:windowtext;display:none;text-decoration:none'>.. </span><span
+style='color:windowtext;display:none;text-decoration:none'>15</span></a></span></span></p>
+
+<p class=MsoNormal style='page-break-after:auto'><span lang=EN-US
+style='font-size:12.0pt;font-family:Arial;letter-spacing:0pt'>&nbsp;</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;page-break-after:
+auto'><span lang=EN-US style='font-size:12.0pt;font-family:Arial;letter-spacing:
+0pt'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h2><a name="_Toc149107984"><b><span lang=EN-US>1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DICOM
+VIEWER</span></b></a><b><span style='font-family:"ＭＳ Ｐゴシック"'>概要</span></b></h2>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:Arial'>DICOM VIEWER</span><span
+style='font-family:"ＭＳ Ｐゴシック"'>は、</span><span lang=EN-US style='font-family:
+Arial'>DICOM</span><span style='font-family:"ＭＳ Ｐゴシック"'>規格に準拠した、弊社</span><span
+lang=EN-US style='font-family:Arial'>MRI</span><span style='font-family:"ＭＳ Ｐゴシック"'>専用のビューワプログラムです。</span><span
+lang=EN-US style='font-family:Arial'>CD-R</span><span style='font-family:"ＭＳ Ｐゴシック"'>アーカイブ機能で作成したアーカイブ</span><span
+lang=EN-US style='font-family:Arial'>CD</span><span style='font-family:"ＭＳ Ｐゴシック"'>の画像データを</span><span
+lang=EN-US style='font-family:Arial'>PC</span><span style='font-family:"ＭＳ Ｐゴシック"'>上で表示することができます。</span></p>
+
+<p class=MsoNormal style='margin-left:35.45pt;line-height:12.0pt'><span
+lang=EN-US style='font-family:Arial'><img width=557 height=92
+src="MANUAL_J/IMAGE002.GIF"
+alt="角丸四角形: ご注意：&#13;&#10;CD-R書き込み面を太陽光にさらすと、データが消える場合があります。管理には十分気をつけてください。&#13;&#10;"></span></p>
+
+<div class=MsoNormal align=center style='text-align:center;page-break-after:
+auto'><span lang=EN-US style='font-size:12.0pt;font-family:Arial;letter-spacing:
+0pt'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h2><a name="_Toc149107985"></a><a name="_Toc95566936"></a><a
+name="_1_画像の表示に使用可能なPC"></a><b><span lang=EN-US>2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><b><span
+style='font-family:"ＭＳ Ｐゴシック"'>画像の表示に使用可能な</span><span lang=EN-US>PC</span></b></h2>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>アーカイブ</span><span lang=EN-US style='font-family:
+Arial'>CD</span><span style='font-family:"ＭＳ ゴシック"'>の画像を表示するには次の条件を満たした</span><span
+lang=EN-US style='font-family:Arial'>PC</span><span style='font-family:"ＭＳ ゴシック"'>が必要です。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>表</span><span lang=EN-US style='font-family:Arial'>1
+</span><span style='font-family:"ＭＳ ゴシック"'>必要条件</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:37.95pt;border-collapse:collapse;border:none'>
+ <tr style='height:1.0pt'>
+  <td width=139 colspan=2 valign=top style='width:104.05pt;border:solid windowtext 1.0pt;
+  background:#FFFF99;padding:0mm 4.95pt 0mm 4.95pt;height:1.0pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><b><span lang=EN-US
+  style='font-family:Arial'>CPU</span></b></p>
+  </td>
+  <td width=354 valign=top style='width:265.25pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0mm 4.95pt 0mm 4.95pt;height:1.0pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><span lang=EN-US
+  style='font-family:Arial'>Pentium-II </span><span style='font-family:"ＭＳ Ｐゴシック"'>以上</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=139 colspan=2 valign=top style='width:104.05pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#FFFF99;padding:0mm 4.95pt 0mm 4.95pt;height:1.0pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><b><span style='font-family:
+  "ＭＳ Ｐゴシック"'>メモリ</span></b></p>
+  </td>
+  <td width=354 valign=top style='width:265.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:1.0pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><span lang=EN-US
+  style='font-family:Arial'>128MB </span><span style='font-family:"ＭＳ Ｐゴシック"'>以上</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=55 rowspan=2 valign=top style='width:41.3pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#FFFF99;padding:0mm 4.95pt 0mm 4.95pt;height:1.0pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><b><span style='font-family:
+  "ＭＳ Ｐゴシック"'>モニタ</span></b></p>
+  </td>
+  <td width=84 valign=top style='width:62.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#FFFF99;padding:0mm 4.95pt 0mm 4.95pt;height:1.0pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><b><span style='font-family:
+  "ＭＳ Ｐゴシック"'>色数</span></b></p>
+  </td>
+  <td width=354 valign=top style='width:265.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:1.0pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><span lang=EN-US
+  style='font-family:Arial'>16bit</span><span style='font-family:"ＭＳ Ｐゴシック"'>以上</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=84 valign=top style='width:62.75pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  background:#FFFF99;padding:0mm 4.95pt 0mm 4.95pt;height:1.0pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><b><span style='font-family:
+  "ＭＳ Ｐゴシック"'>解像度</span></b></p>
+  </td>
+  <td width=354 valign=top style='width:265.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:1.0pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><span lang=EN-US
+  style='font-family:Arial'>1024 × 768 </span><span style='font-family:"ＭＳ Ｐゴシック"'>ドット以上</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=139 colspan=2 valign=top style='width:104.05pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#FFFF99;padding:0mm 4.95pt 0mm 4.95pt;height:1.0pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><b><span lang=EN-US
+  style='font-family:Arial'>OS</span></b></p>
+  </td>
+  <td width=354 valign=top style='width:265.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:1.0pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><span lang=EN-US
+  style='font-family:Arial'>Windows 2000 / XP / Vista</span></p>
+  </td>
+ </tr>
+ <tr style='height:1.0pt'>
+  <td width=139 colspan=2 valign=top style='width:104.05pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#FFFF99;padding:0mm 4.95pt 0mm 4.95pt;height:1.0pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><b><span style='font-family:
+  "ＭＳ Ｐゴシック"'>その他条件</span></b></p>
+  </td>
+  <td width=354 valign=top style='width:265.25pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:1.0pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><span lang=EN-US
+  style='font-family:Arial'>CD-ROM</span><span style='font-family:"ＭＳ Ｐゴシック"'>ドライブ</span><span
+  lang=EN-US style='font-family:Arial'>(*1)</span><span style='font-family:
+  "ＭＳ Ｐゴシック"'>が接続されていること。</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><b><span
+lang=EN-US style='font-family:Arial'>*1: </span></b><b><span style='font-family:
+"ＭＳ ゴシック"'>｢</span></b><b><span lang=EN-US style='font-family:Arial'>CD-ROM</span></b><b><span
+style='font-family:"ＭＳ ゴシック"'>ドライブ｣は、</span></b><b><span lang=EN-US
+style='font-family:Arial'>DVD-ROM</span></b><b><span style='font-family:"ＭＳ ゴシック"'>ドライブ等の</span></b><b><span
+lang=EN-US style='font-family:Arial'>CD-ROM</span></b><b><span
+style='font-family:"ＭＳ ゴシック"'>が読み取り</span></b></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><b><span
+style='font-family:"ＭＳ ゴシック"'>可能な外部記憶装置の総称です。</span></b></p>
+
+<div class=MsoNormal align=center style='text-align:center;page-break-after:
+auto'><span lang=EN-US style='font-size:12.0pt;font-family:Arial;letter-spacing:
+0pt'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h2><a name="_Toc149107986"></a><a name="_Toc95566937"></a><a
+name="_2_DICOM_VIEWERの起動"></a><b><span lang=EN-US>3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DICOM
+VIEWER</span></b><b><span style='font-family:"ＭＳ Ｐゴシック"'>の起動</span></b></h2>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+lang=EN-US style='font-family:Arial'>PC</span><span style='font-family:"ＭＳ ゴシック"'>を起動した後、アーカイブ</span><span
+lang=EN-US style='font-family:Arial'>CD</span><span style='font-family:"ＭＳ ゴシック"'>をドライブに挿入すると、自動的に</span><span
+lang=EN-US style='font-family:Arial'>DICOM VIEWER</span><span style='font-family:
+"ＭＳ ゴシック"'>の使用許諾書が起動します。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>使用許諾書を必ず良く読んだ後、同意する場合は、</span><span lang=EN-US
+style='font-family:Arial'>[ACCEPT]</span><span style='font-family:"ＭＳ ゴシック"'>（同意する）ボタンをクリックしてください。</span><span
+lang=EN-US style='font-family:Arial'>DICOM VIEWER</span><span style='font-family:
+"ＭＳ ゴシック"'>が起動します。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>同意しない場合は、</span><span lang=EN-US
+style='font-family:Arial'>[DECLINE]</span><span style='font-family:"ＭＳ ゴシック"'>（同意しない）ボタンをクリックして、終了してください。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+lang=EN-US style='font-family:Arial'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+lang=EN-US style='font-family:Arial'>DICOM VIEWER</span><span style='font-family:
+"ＭＳ ゴシック"'>が起動すると、ビューワウィンドウと</span><span lang=EN-US style='font-family:Arial'>Patient
+Selector</span><span style='font-family:"ＭＳ ゴシック"'>ダイアログが開き、</span><span
+lang=EN-US style='font-family:Arial'><br>
+1</span><span style='font-family:"ＭＳ ゴシック"'>番目のシリーズ画像を表示します。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>なお、ビューワウィンドウの大きさは固定されており、変更することはできません。ビューワウィンドウと</span><span
+lang=EN-US style='font-family:Arial'>Patient Selector</span><span
+style='font-family:"ＭＳ ゴシック"'>ダイアログは適宜見やすい位置に移動させてください。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+lang=EN-US style='font-family:Arial'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+lang=EN-US style='font-family:Arial'>PC</span><span style='font-family:"ＭＳ ゴシック"'>の設定によっては</span><span
+lang=EN-US style='font-family:Arial'>DICOM VIEWER</span><span style='font-family:
+"ＭＳ ゴシック"'>が自動的に起動しない場合があります（</span><span lang=EN-US style='font-family:Arial'>CD</span><span
+style='font-family:"ＭＳ ゴシック"'>のオートランを許可しない設定にしている場合）。その場合は、マイコンピュータを開き、アーカイブ</span><span
+lang=EN-US style='font-family:Arial'>CD</span><span style='font-family:"ＭＳ ゴシック"'>を挿入したドライブのアイコンをダブルクリックしてください。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+lang=EN-US style='font-family:Arial'>&nbsp;</span></p>
+
+<p class=MsoFooter style='margin-left:35.9pt;layout-grid-mode:both'><span
+lang=EN-US style='font-family:Arial'><img width=576 height=150
+src="MANUAL_J/IMAGE054.GIF"
+alt="角丸四角形: ご注意：&#13;&#10;&#8226;	使用許諾書は、同意する前に必ず良く読んでください。&#13;&#10;&#8226;	DICOM VIEWERの起動後、ビューワを終了するまではアーカイブCDをドライブから取り出さないでください。&#13;&#10;&#8226;	CDを入れ替える場合はいったんDICOM VIEWERを終了させてください。&#13;&#10;"></span></p>
+
+<p class=MsoNormal style='margin-left:35.45pt;line-height:18.0pt;page-break-after:
+auto'><span lang=EN-US style='font-family:Arial'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:35.45pt;line-height:12.0pt'><span
+lang=EN-US style='font-family:Arial'><img width=376 height=382
+src="MANUAL_J/IMAGE004.GIF" border=0></span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>図</span><span lang=EN-US style='font-family:Arial'>1
+DICOM VIEWER</span><span style='font-family:"ＭＳ ゴシック"'>の使用許諾書</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+lang=EN-US style='font-family:Arial'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:35.45pt;line-height:12.0pt'><span
+lang=EN-US style='font-family:Arial'><img width=558 height=386
+src="MANUAL_J/IMAGE006.GIF" border=0></span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>図</span><span lang=EN-US style='font-family:Arial'>2
+DICOM VIEWER</span><span style='font-family:"ＭＳ ゴシック"'>の起動</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;page-break-after:
+auto'><span lang=EN-US style='font-size:12.0pt;font-family:Arial;letter-spacing:
+0pt'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h2><a name="_Toc149107987"></a><a name="_Toc95566938"><b><span lang=EN-US>4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b></a><b><span
+style='font-family:"ＭＳ Ｐゴシック"'>画像の表示</span></b></h2>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>画像を表示するには、まず、</span><span lang=EN-US
+style='font-family:Arial'>Patient Selector</span><span style='font-family:"ＭＳ ゴシック"'>ダイアログ左側のフォルダビューの被検者フォルダの左にある</span><span
+lang=EN-US style='font-family:Arial'><img width=17 height=17
+src="MANUAL_J/IMAGE008.JPG" border=0></span><span style='font-family:
+"ＭＳ ゴシック"'>をクリックしてスタディフォルダを一覧表示させて、その中から表示したいスタディフォルダをクリックするか、</span><span
+lang=EN-US style='font-family:Arial'>Patient Selector</span><span
+style='font-family:"ＭＳ ゴシック"'>ダイアログの右側のリストビューから表示したいスタディをダブルクリックします。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>リストビューに選択したスタディに含まれるシリーズが表示されます。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>アーカイブ</span><span lang=EN-US style='font-family:
+Arial'>CD</span><span style='font-family:"ＭＳ ゴシック"'>には、被検者一人分のスタディ一つ分の検査フォルダだけの画像データが記録されていますので、被検者フォルダとスタディフォルダは各一つ表示されます。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>次に、表示したいシリーズをクリックします。シリーズに含まれるすべての画像がビューワに読み込まれ、表示されます。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>他のシリーズを表示する場合は、</span><span lang=EN-US
+style='font-family:Arial'>Patient Selector</span><span style='font-family:"ＭＳ ゴシック"'>ダイアログのリストビューで表示したいシリーズをクリックします。</span></p>
+
+<p class=MsoFooter style='margin-left:35.9pt;layout-grid-mode:both'><span
+lang=EN-US style='font-family:Arial'><img width=534 height=66
+src="MANUAL_J/IMAGE015.GIF"
+alt="角丸四角形: ご注意：&#13;&#10;画像読み込み中は[File]メニューの操作はできません。&#13;&#10;"></span></p>
+
+<p class=MsoNormal style='margin-left:35.45pt;line-height:18.0pt;page-break-after:
+auto'><span lang=EN-US style='font-family:Arial'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:35.45pt;line-height:12.0pt'><span
+lang=EN-US style='font-family:Arial'><img width=568 height=457
+src="MANUAL_J/IMAGE011.GIF" border=0></span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>図</span><span lang=EN-US style='font-family:Arial'>3
+Patient Selector</span><span style='font-family:"ＭＳ ゴシック"'>ダイアログ</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;page-break-after:
+auto'><span lang=EN-US style='font-size:12.0pt;font-family:Arial;letter-spacing:
+0pt'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h2><a name="_Toc149107988"></a><a name="_Toc95566939"><b><span lang=EN-US>5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b></a><b><span
+style='font-family:"ＭＳ Ｐゴシック"'>画像ごとに読み込む場合</span></b></h2>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>メニューバーから</span><span lang=EN-US style='font-family:
+Arial'>[File]-[Open DICOM file]</span><span style='font-family:"ＭＳ ゴシック"'>をクリックすると「ファイルを開く」ダイアログが表示されます。</span></p>
+
+<p class=MsoNormal style='margin-left:35.45pt;line-height:12.0pt'><span
+lang=EN-US style='font-family:Arial'><img width=513 height=186
+src="MANUAL_J/IMAGE013.GIF" border=0></span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>図</span><span lang=EN-US style='font-family:Arial'>4
+</span><span style='font-family:"ＭＳ ゴシック"'>「ファイルを開く」ダイアログ（画像ごと）</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+lang=EN-US style='font-family:Arial'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>ファイルを選択して［開く］ボタンをクリックするとその画像がビューワで参照できます。画像を選択する際、キーボードの［</span><span
+lang=EN-US style='font-family:Arial'>Ctrl</span><span style='font-family:"ＭＳ ゴシック"'>］キーを押しながら複数の画像ファイルを選択して［開く］ボタンをクリックすると複数の画像が表示できます。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>また、［</span><span lang=EN-US style='font-family:
+Arial'>Shift</span><span style='font-family:"ＭＳ ゴシック"'>］キーを押しながら二つの画像ファイルを選択して［開く］ボタンをクリックすると選択した画像にはさまれた範囲の画像が表示できます。</span></p>
+
+<p class=MsoNormalIndent><span lang=EN-US style='font-family:Arial'><img
+width=576 height=140 src="MANUAL_J/IMAGE001.GIF"
+alt="角丸四角形: ご注意：&#13;&#10;[File]-[Open DICOM file]メニューから画像を選択すると、Patient Selectorが非表示になります。Patient Selectorを表示する場合は、「6 別のドライブの画像を読み込む場合」の手順でメニューバーから[File]-[Open DICOMDIR file]をクリックして「DICOMDIR」ファイルを選択してください。&#13;&#10;"></span></p>
+
+<div class=MsoNormal align=center style='text-align:center;page-break-after:
+auto'><a name="_Toc95566940"><span lang=EN-US style='font-size:12.0pt;
+font-family:Arial;letter-spacing:0pt'>
+
+<hr size=2 width="100%" align=center>
+
+</span></a></div>
+
+<h2><a name="_Toc149107989"></a><a name="_6_別のドライブの画像を読み込む場合"></a><b><span
+lang=EN-US>6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><b><span
+style='font-family:"ＭＳ Ｐゴシック"'>別のドライブの画像を読み込む場合</span></b></h2>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>アーカイブ</span><span lang=EN-US style='font-family:
+Arial'>CD</span><span style='font-family:"ＭＳ ゴシック"'>やアーカイブ</span><span
+lang=EN-US style='font-family:Arial'>DVD-RAM</span><span style='font-family:
+"ＭＳ ゴシック"'>が他の</span><span lang=EN-US style='font-family:Arial'>CD-ROM</span><span
+style='font-family:"ＭＳ ゴシック"'>ドライブや</span><span lang=EN-US style='font-family:
+Arial'>DVD-RAM</span><span style='font-family:"ＭＳ ゴシック"'>ドライブにある場合、次の手順で画像データを読み込むことができます。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>メニューバーから</span><span lang=EN-US style='font-family:
+Arial'>[File]-[Open DICOMDIR file]</span><span style='font-family:"ＭＳ ゴシック"'>をクリックすると「ファイルを開く」ダイアログが表示されますので表示したいドライブにあるアーカイブ</span><span
+lang=EN-US style='font-family:Arial'>CD</span><span style='font-family:"ＭＳ ゴシック"'>またはアーカイブ</span><span
+lang=EN-US style='font-family:Arial'>DVD-RAM</span><span style='font-family:
+"ＭＳ ゴシック"'>の「</span><span lang=EN-US style='font-family:Arial'>DICOMDIR</span><span
+style='font-family:"ＭＳ ゴシック"'>」ファイルを選択してください。</span></p>
+
+<p class=MsoNormal style='margin-left:35.45pt;line-height:12.0pt'><span
+lang=EN-US style='font-family:Arial'><img width=502 height=154
+src="MANUAL_J/IMAGE016.GIF" border=0></span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>図</span><span lang=EN-US style='font-family:Arial'>5
+</span><span style='font-family:"ＭＳ ゴシック"'>「ファイルを開く」ダイアログ（別のドライブの画像）</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+lang=EN-US style='font-family:Arial'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>［開く］ボタンをクリックすると</span><span lang=EN-US
+style='font-family:Arial'>Patient Selector</span><span style='font-family:"ＭＳ ゴシック"'>ダイアログが表示されます。通常の起動時と同様に</span><span
+lang=EN-US style='font-family:Arial'>Patient Selector</span><span
+style='font-family:"ＭＳ ゴシック"'>ダイアログから表示したいシリーズを選択すると、シリーズに含まれる画像がビューワで表示できます。</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;page-break-after:
+auto'><span lang=EN-US style='font-size:12.0pt;font-family:Arial;letter-spacing:
+0pt'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h2><a name="_Toc149107990"></a><a name="_Toc95566941"><b><span lang=EN-US>7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b></a><b><span
+style='font-family:"ＭＳ Ｐゴシック"'>画像のスクロール</span></b></h2>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>読み込んだ画像数がビューワで表示される枚数よりも多いときには、表示されていない他の画像をスクロールによって表示できます。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>画像をスクロールするにはビューワ画面右端のスクロールバーを操作してください。</span><span
+lang=EN-US style='font-family:Arial'><img width=21 height=16
+src="MANUAL_J/IMAGE005.GIF" border=0></span><span style='font-family:
+"ＭＳ ゴシック"'>または</span><span lang=EN-US style='font-family:Arial'><img width=21
+height=16 src="MANUAL_J/IMAGE009.GIF" border=0></span><span
+style='font-family:"ＭＳ ゴシック"'>をクリックするか、スライダーをドラッグすることで画像のスクロールができます。</span><span
+lang=EN-US style='font-family:Arial'><img width=21 height=16
+src="MANUAL_J/IMAGE005.GIF" border=0></span><span style='font-family:
+"ＭＳ ゴシック"'>または</span><span lang=EN-US style='font-family:Arial'><img width=21
+height=16 src="MANUAL_J/IMAGE009.GIF" border=0></span><span
+style='font-family:"ＭＳ ゴシック"'>をクリックした場合は</span><span lang=EN-US
+style='font-family:Arial'>1</span><span style='font-family:"ＭＳ ゴシック"'>画像ずつスクロールします。マウスホイールでもスクロール操作ができます。</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;page-break-after:
+auto'><span lang=EN-US style='font-size:12.0pt;font-family:Arial;letter-spacing:
+0pt'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h2><a name="_Toc149107991"></a><a name="_Toc95566942"><b><span lang=EN-US>8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b></a><b><span
+style='font-family:"ＭＳ Ｐゴシック"'>画像上に表示される情報</span></b></h2>
+
+<p class=MsoNormal style='margin-left:35.45pt;line-height:18.0pt;page-break-after:
+auto'><span style='font-family:"ＭＳ Ｐゴシック"'>画像上に表示される情報のレイアウトを示します。</span></p>
+
+<p class=MsoNormal style='margin-left:35.45pt;line-height:12.0pt;page-break-after:
+auto'><span lang=EN-US style='font-family:Arial'><img width=344 height=351
+src="MANUAL_J/IMAGE022.GIF" border=0></span></p>
+
+<p class=MsoNormal style='margin-left:35.45pt;line-height:12.0pt;page-break-after:
+auto'><span style='font-family:"ＭＳ Ｐゴシック"'>図</span><span lang=EN-US
+style='font-family:Arial'>6 </span><span style='font-family:"ＭＳ Ｐゴシック"'>画像上に表示される情報</span></p>
+
+<p class=MsoNormal style='margin-left:35.45pt;line-height:12.0pt;page-break-after:
+auto'><span lang=EN-US style='font-family:Arial'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>表</span><span lang=EN-US style='font-family:Arial'>2
+</span><span style='font-family:"ＭＳ ゴシック"'>情報項目</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=552
+ style='width:414.0pt;margin-left:36.95pt;border-collapse:collapse'>
+ <tr style='height:14.25pt'>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=ZH-CN style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>番号</span></p>
+  </td>
+  <td width=193 valign=top style='width:145.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=ZH-CN style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>情報項目</span></p>
+  </td>
+  <td width=72 valign=top style='width:54.0pt;padding:0mm 4.95pt 0mm 4.95pt;
+  height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>&nbsp;</span></p>
+  </td>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=ZH-CN style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>番号</span></p>
+  </td>
+  <td width=207 valign=top style='width:155.0pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=ZH-CN style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>情報項目</span></p>
+  </td>
+ </tr>
+ <tr style='height:14.25pt'>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>1</span></p>
+  </td>
+  <td width=193 valign=top style='width:145.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>被検者名</span></p>
+  </td>
+  <td width=72 valign=top style='width:54.0pt;padding:0mm 4.95pt 0mm 4.95pt;
+  height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>&nbsp;</span></p>
+  </td>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>17</span></p>
+  </td>
+  <td width=207 valign=top style='width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>スライス番号</span></p>
+  </td>
+ </tr>
+ <tr style='height:14.25pt'>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>2</span></p>
+  </td>
+  <td width=193 valign=top style='width:145.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>性別</span><span lang=EN-US
+  style='font-family:Arial;letter-spacing:0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>［</span><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>M</span><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>、</span><span lang=EN-US
+  style='font-family:Arial;letter-spacing:0pt'>F</span><span style='font-family:
+  "ＭＳ Ｐゴシック";letter-spacing:0pt'>、</span><span lang=EN-US style='font-family:
+  Arial;letter-spacing:0pt'>O</span><span style='font-family:"ＭＳ Ｐゴシック";
+  letter-spacing:0pt'>］</span></p>
+  </td>
+  <td width=72 valign=top style='width:54.0pt;padding:0mm 4.95pt 0mm 4.95pt;
+  height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>&nbsp;</span></p>
+  </td>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>18</span></p>
+  </td>
+  <td width=207 valign=top style='width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=ZH-CN style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>積算回数（</span><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>NSA</span><span
+  lang=ZH-CN style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>）</span></p>
+  </td>
+ </tr>
+ <tr style='height:14.25pt'>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>3</span></p>
+  </td>
+  <td width=193 valign=top style='width:145.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=ZH-CN style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>年齢</span></p>
+  </td>
+  <td width=72 valign=top style='width:54.0pt;padding:0mm 4.95pt 0mm 4.95pt;
+  height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>&nbsp;</span></p>
+  </td>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>19</span></p>
+  </td>
+  <td width=207 valign=top style='width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>撮影日</span></p>
+  </td>
+ </tr>
+ <tr style='height:14.25pt'>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>4</span></p>
+  </td>
+  <td width=193 valign=top style='width:145.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>体重</span></p>
+  </td>
+  <td width=72 valign=top style='width:54.0pt;padding:0mm 4.95pt 0mm 4.95pt;
+  height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>&nbsp;</span></p>
+  </td>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>20</span></p>
+  </td>
+  <td width=207 valign=top style='width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>撮影時刻</span></p>
+  </td>
+ </tr>
+ <tr style='height:14.25pt'>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>5</span></p>
+  </td>
+  <td width=193 valign=top style='width:145.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>被検者</span><span lang=EN-US
+  style='font-family:Arial;letter-spacing:0pt'>ID</span></p>
+  </td>
+  <td width=72 valign=top style='width:54.0pt;padding:0mm 4.95pt 0mm 4.95pt;
+  height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>&nbsp;</span></p>
+  </td>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>21</span></p>
+  </td>
+  <td width=207 valign=top style='width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>スキャン時間</span></p>
+  </td>
+ </tr>
+ <tr style='height:14.25pt'>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>6</span></p>
+  </td>
+  <td width=193 valign=top style='width:145.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>部位</span></p>
+  </td>
+  <td width=72 valign=top style='width:54.0pt;padding:0mm 4.95pt 0mm 4.95pt;
+  height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>&nbsp;</span></p>
+  </td>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>22</span></p>
+  </td>
+  <td width=207 valign=top style='width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>表示マトリックス</span></p>
+  </td>
+ </tr>
+ <tr style='height:14.25pt'>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>7</span></p>
+  </td>
+  <td width=193 valign=top style='width:145.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>計測タイプ</span><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span><span style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>［</span><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>2D</span><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>、</span><span lang=EN-US
+  style='font-family:Arial;letter-spacing:0pt'>3D</span><span style='font-family:
+  "ＭＳ Ｐゴシック";letter-spacing:0pt'>］</span></p>
+  </td>
+  <td width=72 valign=top style='width:54.0pt;padding:0mm 4.95pt 0mm 4.95pt;
+  height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>&nbsp;</span></p>
+  </td>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>23</span></p>
+  </td>
+  <td width=207 valign=top style='width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>シリーズ名</span></p>
+  </td>
+ </tr>
+ <tr style='height:14.25pt'>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>8</span></p>
+  </td>
+  <td width=193 valign=top style='width:145.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>シーケンス名</span></p>
+  </td>
+  <td width=72 valign=top style='width:54.0pt;padding:0mm 4.95pt 0mm 4.95pt;
+  height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>&nbsp;</span></p>
+  </td>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>24</span></p>
+  </td>
+  <td width=207 valign=top style='width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>カード詳細情報</span></p>
+  </td>
+ </tr>
+ <tr style='height:14.25pt'>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>9</span></p>
+  </td>
+  <td width=193 valign=top style='width:145.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>繰り返し時間（</span><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>TR</span><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>）</span></p>
+  </td>
+  <td width=72 valign=top style='width:54.0pt;padding:0mm 4.95pt 0mm 4.95pt;
+  height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>&nbsp;</span></p>
+  </td>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>25</span></p>
+  </td>
+  <td width=207 valign=top style='width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>スライス位置</span></p>
+  </td>
+ </tr>
+ <tr style='height:14.25pt'>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>10</span></p>
+  </td>
+  <td width=193 valign=top style='width:145.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>反復回復時間（</span><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>TI</span><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>）</span></p>
+  </td>
+  <td width=72 valign=top style='width:54.0pt;padding:0mm 4.95pt 0mm 4.95pt;
+  height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>&nbsp;</span></p>
+  </td>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>26</span></p>
+  </td>
+  <td width=207 valign=top style='width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>拡大倍率</span></p>
+  </td>
+ </tr>
+ <tr style='height:14.25pt'>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>11</span></p>
+  </td>
+  <td width=193 valign=top style='width:145.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>エコー時間（</span><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>TE</span><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>）</span></p>
+  </td>
+  <td width=72 valign=top style='width:54.0pt;padding:0mm 4.95pt 0mm 4.95pt;
+  height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>&nbsp;</span></p>
+  </td>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>27</span></p>
+  </td>
+  <td width=207 valign=top style='width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>検査装置モデル名</span></p>
+  </td>
+ </tr>
+ <tr style='height:14.25pt'>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>12</span></p>
+  </td>
+  <td width=193 valign=top style='width:145.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>スライス断面</span></p>
+  </td>
+  <td width=72 valign=top style='width:54.0pt;padding:0mm 4.95pt 0mm 4.95pt;
+  height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>&nbsp;</span></p>
+  </td>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>28</span></p>
+  </td>
+  <td width=207 valign=top style='width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>ウィンドウ幅</span></p>
+  </td>
+ </tr>
+ <tr style='height:14.25pt'>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>13</span></p>
+  </td>
+  <td width=193 valign=top style='width:145.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>撮影視野（</span><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>FOV</span><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>）</span></p>
+  </td>
+  <td width=72 valign=top style='width:54.0pt;padding:0mm 4.95pt 0mm 4.95pt;
+  height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>&nbsp;</span></p>
+  </td>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>29</span></p>
+  </td>
+  <td width=207 valign=top style='width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>ウィンドウレベル</span></p>
+  </td>
+ </tr>
+ <tr style='height:14.25pt'>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>14</span></p>
+  </td>
+  <td width=193 valign=top style='width:145.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>スライス厚</span></p>
+  </td>
+  <td width=72 valign=top style='width:54.0pt;padding:0mm 4.95pt 0mm 4.95pt;
+  height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>&nbsp;</span></p>
+  </td>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>30</span></p>
+  </td>
+  <td width=207 valign=top style='width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>病院名</span></p>
+  </td>
+ </tr>
+ <tr style='height:14.25pt'>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>15</span></p>
+  </td>
+  <td width=193 valign=top style='width:145.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>被検者体位</span></p>
+  </td>
+  <td width=72 valign=top style='width:54.0pt;padding:0mm 4.95pt 0mm 4.95pt;
+  height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>&nbsp;</span></p>
+  </td>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>31</span></p>
+  </td>
+  <td width=207 valign=top style='width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>オリエンテーションマーカー</span></p>
+  </td>
+ </tr>
+ <tr style='height:14.25pt'>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>16</span></p>
+  </td>
+  <td width=193 valign=top style='width:145.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>計測マトリックス</span></p>
+  </td>
+  <td width=72 nowrap valign=bottom style='width:54.0pt;padding:0mm 4.95pt 0mm 4.95pt;
+  height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-size:11.0pt;font-family:Arial;letter-spacing:0pt'>&nbsp;</span></p>
+  </td>
+  <td width=40 valign=top style='width:30.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>32</span></p>
+  </td>
+  <td width=207 valign=top style='width:155.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:14.25pt'>
+  <p class=MsoNormal style='line-height:normal;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>スケーラー</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-left:51.3pt;text-indent:-15.3pt;line-height:
+12.0pt;page-break-after:auto'><span lang=EN-US style='font-family:Arial'>&nbsp;</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;page-break-after:
+auto'><span lang=EN-US style='font-size:12.0pt;font-family:Arial;letter-spacing:
+0pt'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h3><a name="_Toc149107992"><b><span lang=EN-US style='font-size:10.0pt'>8.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b></a><b><span
+style='font-size:10.0pt;font-family:"ＭＳ Ｐゴシック"'>オリエンテーションマーカー</span></b></h3>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>オリエンテーションマーカーは表示された画像の方向を示します。</span></p>
+
+<p class=MsoNormal style='margin-left:51.0pt;text-indent:-15.0pt;line-height:
+12.0pt;page-break-after:auto'><span lang=EN-US style='font-family:Arial'><img
+width=162 height=78 src="MANUAL_J/IMAGE024.GIF" border=0></span></p>
+
+<p class=MsoNormal style='margin-left:51.3pt;text-indent:-15.3pt;line-height:
+12.0pt;page-break-after:auto'><span style='font-family:"ＭＳ Ｐゴシック"'>図</span><span
+lang=EN-US style='font-family:Arial'>7 </span><span style='font-family:"ＭＳ Ｐゴシック"'>オリエンテーションマーカー</span></p>
+
+<p class=MsoNormal style='margin-left:51.3pt;text-indent:-15.3pt;line-height:
+12.0pt;page-break-after:auto'><span lang=EN-US style='font-family:Arial'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>方向と、表示する文字は次の通りです。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>表</span><span lang=EN-US style='font-family:Arial'>3
+</span><span style='font-family:"ＭＳ ゴシック"'>表示方向</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0
+ style='margin-left:39.95pt;border-collapse:collapse;border:none'>
+ <tr style='height:3.5pt'>
+  <td width=47 style='width:35.4pt;border:solid windowtext 1.0pt;background:
+  #FFFF99;padding:0mm 4.95pt 0mm 4.95pt;height:3.5pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><b><span style='font-family:
+  HG丸ｺﾞｼｯｸM-PRO'>方向</span></b></p>
+  </td>
+  <td width=151 style='width:113.6pt;border:solid windowtext 1.0pt;border-left:
+  none;background:#FFFF99;padding:0mm 4.95pt 0mm 4.95pt;height:3.5pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><b><span style='font-family:
+  HG丸ｺﾞｼｯｸM-PRO'>表示する文字</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:3.5pt'>
+  <td width=47 valign=top style='width:35.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:3.5pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><span style='font-family:
+  "ＭＳ Ｐゴシック"'>頭側</span></p>
+  </td>
+  <td width=151 valign=top style='width:113.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:3.5pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><span lang=EN-US
+  style='font-family:Arial'>H</span></p>
+  </td>
+ </tr>
+ <tr style='height:3.5pt'>
+  <td width=47 valign=top style='width:35.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:3.5pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><span style='font-family:
+  "ＭＳ Ｐゴシック"'>足側</span></p>
+  </td>
+  <td width=151 valign=top style='width:113.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:3.5pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><span lang=EN-US
+  style='font-family:Arial'>F</span></p>
+  </td>
+ </tr>
+ <tr style='height:3.5pt'>
+  <td width=47 valign=top style='width:35.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:3.5pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><span style='font-family:
+  "ＭＳ Ｐゴシック"'>右側</span></p>
+  </td>
+  <td width=151 valign=top style='width:113.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:3.5pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><span lang=EN-US
+  style='font-family:Arial'>R</span></p>
+  </td>
+ </tr>
+ <tr style='height:3.5pt'>
+  <td width=47 valign=top style='width:35.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:3.5pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><span style='font-family:
+  "ＭＳ Ｐゴシック"'>左側</span></p>
+  </td>
+  <td width=151 valign=top style='width:113.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:3.5pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><span lang=EN-US
+  style='font-family:Arial'>L</span></p>
+  </td>
+ </tr>
+ <tr style='height:3.5pt'>
+  <td width=47 valign=top style='width:35.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:3.5pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><span style='font-family:
+  "ＭＳ Ｐゴシック"'>前面</span></p>
+  </td>
+  <td width=151 valign=top style='width:113.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:3.5pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><span lang=EN-US
+  style='font-family:Arial'>A</span></p>
+  </td>
+ </tr>
+ <tr style='height:3.5pt'>
+  <td width=47 valign=top style='width:35.4pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 4.95pt 0mm 4.95pt;height:3.5pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><span style='font-family:
+  "ＭＳ Ｐゴシック"'>背面</span></p>
+  </td>
+  <td width=151 valign=top style='width:113.6pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 4.95pt 0mm 4.95pt;height:3.5pt'>
+  <p class=MsoNormalIndent style='margin-left:0mm'><span lang=EN-US
+  style='font-family:Arial'>P</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-left:51.3pt;text-indent:-15.3pt;line-height:
+12.0pt;page-break-after:auto'><span lang=EN-US style='font-family:Arial'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:51.0pt;text-indent:-15.0pt;line-height:
+12.0pt;page-break-after:auto'><span lang=EN-US style='font-family:Arial'><img
+width=382 height=294 src="MANUAL_J/IMAGE003.GIF" border=0></span></p>
+
+<p class=MsoNormal style='margin-left:51.3pt;text-indent:-15.3pt;line-height:
+12.0pt;page-break-after:auto'><span style='font-family:"ＭＳ Ｐゴシック"'>図</span><span
+lang=EN-US style='font-family:Arial'>8 </span><span style='font-family:"ＭＳ Ｐゴシック"'>画像向き例</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;page-break-after:
+auto'><span lang=EN-US style='font-size:12.0pt;font-family:Arial;letter-spacing:
+0pt'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h3><a name="_Toc149107993"><b><span lang=EN-US style='font-size:10.0pt'>8.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b></a><b><span
+style='font-size:10.0pt;font-family:"ＭＳ Ｐゴシック"'>スケーラー</span></b></h3>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>スケーラーは表示された画像の縮尺を示します。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>画像の拡大、縮小を行うと変化します。</span><span lang=EN-US
+style='font-family:Arial'>(</span><span style='font-family:"ＭＳ ゴシック"'>｢</span><span
+lang=EN-US style='font-family:Arial'><a href="#_10_拡大・縮小の設定">10 <span
+lang=EN-US style='font-family:"ＭＳ ゴシック"'><span lang=EN-US>拡大・縮小の設定</span></span></a></span><span
+style='font-family:"ＭＳ ゴシック"'>｣参照</span><span lang=EN-US style='font-family:
+Arial'>)</span></p>
+
+<p class=MsoNormal style='margin-left:51.0pt;text-indent:-15.0pt;line-height:
+12.0pt;page-break-after:auto'><span lang=EN-US style='font-family:Arial'><img
+border=0 width=314 height=438 src="MANUAL_J/IMAGE028.GIF"></span></p>
+
+<p class=MsoNormal style='margin-left:51.3pt;text-indent:-15.3pt;line-height:
+12.0pt;page-break-after:auto'><span style='font-family:"ＭＳ Ｐゴシック"'>図</span><span
+lang=EN-US style='font-family:Arial'>9 </span><span style='font-family:"ＭＳ Ｐゴシック"'>スケーラー</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;page-break-after:
+auto'><span lang=EN-US style='font-size:12.0pt;font-family:Arial;letter-spacing:
+0pt'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h2><a name="_Toc149107994"></a><a name="_Toc95566943"><b><span lang=EN-US>9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b></a><b><span
+style='font-family:"ＭＳ Ｐゴシック"'>ウィンドウ幅、ウィンドウレベルの設定</span></b></h2>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>メニューバー</span><span style='font-family:"ＭＳ ゴシック"'>の</span><span
+lang=EN-US style='font-family:Arial'>[Display]-[Window Width/Level]</span><span
+style='font-family:"ＭＳ ゴシック"'>をクリックすると</span><span lang=EN-US style='font-family:
+Arial'><img border=0 width=14 height=13 src="MANUAL_J/IMAGE010.GIF"></span><span
+style='font-family:"ＭＳ ゴシック"'>（チェック）がつきます。または、アイコン</span><span lang=EN-US
+style='font-family:Arial'><img border=0 width=26 height=25
+src="MANUAL_J/IMAGE012.GIF"></span><span style='font-family:"ＭＳ ゴシック"'>をクリックします。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>メニューバー</span><span style='font-family:"ＭＳ ゴシック"'>の</span><span
+lang=EN-US style='font-family:Arial'>[Display]-[Window Width/Level]</span><span
+style='font-family:"ＭＳ ゴシック"'>に</span><span lang=EN-US style='font-family:Arial'><img
+border=0 width=14 height=13 src="MANUAL_J/IMAGE010.GIF"></span><span
+style='font-family:"ＭＳ ゴシック"'>（チェック）がついた状態、またはアイコン</span><span lang=EN-US
+style='font-family:Arial'><img border=0 width=26 height=25
+src="MANUAL_J/IMAGE012.GIF"></span><span style='font-family:"ＭＳ ゴシック"'>が選択された状態で、マウスの左ボタンを使用して画像上でドラッグすると、ウィンドウ</span><span
+style='font-family:"ＭＳ ゴシック"'>幅、ウィンドウ</span><span style='font-family:"ＭＳ ゴシック"'>レベルを変更することができます。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>ビューワの起動直後は</span><span lang=EN-US
+style='font-family:Arial'>[Window Width/Level]</span><span style='font-family:
+"ＭＳ ゴシック"'>が選択された状態になっています。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+lang=EN-US style='font-family:Arial'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:19.85pt;text-indent:19.85pt'><span
+lang=EN-US style='font-family:Arial'><img border=0 width=523 height=380
+src="MANUAL_J/IMAGE032.GIF"></span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>図</span><span lang=EN-US style='font-family:Arial'>10
+</span><span style='font-family:"ＭＳ ゴシック"'>ウィンドウ幅</span><span lang=EN-US
+style='font-family:Arial'>/</span><span style='font-family:"ＭＳ ゴシック"'>レベルの設定</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;page-break-after:
+auto'><span lang=EN-US style='font-size:12.0pt;font-family:Arial;letter-spacing:
+0pt'>
+
+<hr size=2 width="100%" align=center>
+
+</span></div>
+
+<h2><a name="_Toc149107995"></a><a name="_Toc95566944"></a><a
+name="_10_拡大・縮小の設定"></a><b><span lang=EN-US>10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><b><span
+style='font-family:"ＭＳ Ｐゴシック"'>拡大・縮小の設定</span></b></h2>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>メニューバー</span><span style='font-family:"ＭＳ ゴシック"'>の</span><span
+lang=EN-US style='font-family:Arial'>[Display]-[Zoom]</span><span
+style='font-family:"ＭＳ ゴシック"'>をクリックすると</span><span lang=EN-US style='font-family:
+Arial'><img border=0 width=14 height=13 src="MANUAL_J/IMAGE010.GIF"></span><span
+style='font-family:"ＭＳ ゴシック"'>（チェック）がつきます。または、アイコン</span><span lang=EN-US
+style='font-family:Arial'><img border=0 width=26 height=23
+src="MANUAL_J/IMAGE014.GIF"></span><span style='font-family:"ＭＳ ゴシック"'>をクリックします。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>メニューバー</span><span style='font-family:"ＭＳ ゴシック"'>の</span><span
+lang=EN-US style='font-family:Arial'>[Display]-[Zoom]</span><span
+style='font-family:"ＭＳ ゴシック"'>に</span><span lang=EN-US style='font-family:Arial'><img
+border=0 width=14 height=13 src="MANUAL_J/IMAGE010.GIF"></span><span
+style='font-family:"ＭＳ ゴシック"'>（チェック）がついた状態、またはアイコン</span><span lang=EN-US
+style='font-family:Arial'><img border=0 width=26 height=23
+src="MANUAL_J/IMAGE014.GIF"></span><span style='font-family:"ＭＳ ゴシック"'>が選択された状態で、マウスの左ボタンを使用して画像上でドラッグすると、画像を拡大・縮小することができます。</span></p>
+
+<p class=MsoNormal style='margin-left:19.85pt;text-indent:19.85pt'><span
+lang=EN-US style='font-family:Arial'><img border=0 width=506 height=408
+src="MANUAL_J/IMAGE036.GIF"></span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>図</span><span lang=EN-US style='font-family:Arial'>11
+</span><span style='font-family:"ＭＳ ゴシック"'>拡大・縮小の設定</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;page-break-after:
+auto'><a name="_Toc95566945"><span lang=EN-US style='font-size:12.0pt;
+font-family:Arial;letter-spacing:0pt'>
+
+<hr size=2 width="100%" align=center>
+
+</span></a></div>
+
+<h2><a name="_Toc149107996"><b><span lang=EN-US>11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b></a><b><span
+style='font-family:"ＭＳ Ｐゴシック"'>画像の移動</span></b></h2>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>メニューバー</span><span style='font-family:"ＭＳ ゴシック"'>の</span><span
+lang=EN-US style='font-family:Arial'>[Display]-[Pan]</span><span
+style='font-family:"ＭＳ ゴシック"'>をクリックすると</span><span lang=EN-US style='font-family:
+Arial'><img border=0 width=14 height=13 src="MANUAL_J/IMAGE010.GIF"></span><span
+style='font-family:"ＭＳ ゴシック"'>（チェック）がつきます。または、アイコン</span><span lang=EN-US
+style='font-family:Arial'><img border=0 width=26 height=23
+src="MANUAL_J/IMAGE021.GIF"></span><span style='font-family:"ＭＳ ゴシック"'>をクリックします。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>メニューバー</span><span style='font-family:"ＭＳ ゴシック"'>の</span><span
+lang=EN-US style='font-family:Arial'>[Display]-[Pan]</span><span
+style='font-family:"ＭＳ ゴシック"'>に</span><span lang=EN-US style='font-family:Arial'><img
+border=0 width=14 height=13 src="MANUAL_J/IMAGE010.GIF"></span><span
+style='font-family:"ＭＳ ゴシック"'>（チェック）がついた状態、またはアイコン</span><span lang=EN-US
+style='font-family:Arial'><img border=0 width=26 height=23
+src="MANUAL_J/IMAGE021.GIF"></span><span style='font-family:"ＭＳ ゴシック"'>が選択された状態で、マウスの左ボタンを使用して画像上でドラッグすると、画像の位置を移動することができます。</span></p>
+
+<p class=MsoNormal style='margin-left:35.45pt;line-height:12.0pt;layout-grid-mode:
+char'><span lang=EN-US style='font-family:Arial'><img border=0 width=460
+height=394 src="MANUAL_J/IMAGE040.GIF"></span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>図</span><span lang=EN-US style='font-family:Arial'>12
+</span><span style='font-family:"ＭＳ ゴシック"'>画像の移動</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;page-break-after:
+auto'><a name="_Toc95566946"><span lang=EN-US style='font-size:12.0pt;
+font-family:Arial;letter-spacing:0pt'>
+
+<hr size=2 width="100%" align=center>
+
+</span></a></div>
+
+<h2><a name="_Toc149107997"><b><span lang=EN-US>12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b></a><b><span
+style='font-family:"ＭＳ Ｐゴシック"'>画像の設定を元にもどす</span></b></h2>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>メニューバーの</span><span lang=EN-US style='font-family:
+Arial'>[Display]-[Reset]</span><span style='font-family:"ＭＳ ゴシック"'>をクリックするか、またはアイコン</span><span
+lang=EN-US style='font-family:Arial'><img border=0 width=25 height=25
+src="MANUAL_J/IMAGE023.GIF"></span><span style='font-family:"ＭＳ ゴシック"'>をクリックすると、読み込んでいるすべての画像について、ウィンドウ幅</span><span
+lang=EN-US style='font-family:Arial'>/</span><span style='font-family:"ＭＳ ゴシック"'>レベルの設定、拡大・縮小、および画像の移動の設定が読み込み時の状態に戻ります。</span></p>
+
+<p class=MsoNormal style='margin-left:35.45pt;line-height:12.0pt'><span
+lang=EN-US style='font-family:Arial'><img border=0 width=474 height=109
+src="MANUAL_J/IMAGE044.GIF"></span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>図</span><span lang=EN-US style='font-family:Arial'>13
+</span><span style='font-family:"ＭＳ ゴシック"'>画像の設定を元に戻す</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;page-break-after:
+auto'><a name="_Toc95566947"><span lang=EN-US style='font-size:12.0pt;
+font-family:Arial;letter-spacing:0pt'>
+
+<hr size=2 width="100%" align=center>
+
+</span></a></div>
+
+<h2><a name="_Toc149107998"><b><span lang=EN-US>13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b></a><b><span
+style='font-family:"ＭＳ Ｐゴシック"'>全ての画像に対して設定する</span></b></h2>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>メニューバーの</span><span lang=EN-US style='font-family:
+Arial'>[Display]-[Select All]</span><span style='font-family:"ＭＳ ゴシック"'>をクリックするか、またはアイコン</span><span
+lang=EN-US style='font-family:Arial'><img border=0 width=27 height=24
+src="MANUAL_J/IMAGE025.GIF"></span><span style='font-family:"ＭＳ ゴシック"'>をクリックした後、一つの画像に対してウィンドウ幅</span><span
+lang=EN-US style='font-family:Arial'>/</span><span style='font-family:"ＭＳ ゴシック"'>レベルの設定、拡大・縮小、および画像の移動の設定を行うと、その設定がすべての画像に対して適用されます。</span></p>
+
+<p class=MsoNormal style='margin-left:35.45pt;line-height:12.0pt'><span
+lang=EN-US style='font-family:Arial'><img border=0 width=474 height=113
+src="MANUAL_J/IMAGE048.GIF"></span></p>
+
+<p class=MsoNormal style='margin-left:35.45pt;line-height:12.0pt;page-break-after:
+auto'><span style='font-family:"ＭＳ ゴシック"'>図</span><span lang=EN-US
+style='font-family:Arial'>14 </span><span style='font-family:"ＭＳ ゴシック"'>全ての画像に対して設定する</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;page-break-after:
+auto'><a name="_Toc95566948"><span lang=EN-US style='font-size:12.0pt;
+font-family:Arial;letter-spacing:0pt'>
+
+<hr size=2 width="100%" align=center>
+
+</span></a></div>
+
+<h2><a name="_Toc149107999"><b><span lang=EN-US>14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b></a><b><span
+style='font-family:"ＭＳ Ｐゴシック"'>表示レイアウトの変更</span></b></h2>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>表示レイアウトは、</span><span lang=EN-US
+style='font-family:Arial'>1×1</span><span style='font-family:"ＭＳ ゴシック"'>、</span><span
+lang=EN-US style='font-family:Arial'>2×2</span><span style='font-family:"ＭＳ ゴシック"'>の</span><span
+lang=EN-US style='font-family:Arial'>2</span><span style='font-family:"ＭＳ ゴシック"'>種類から選択して指定することができます。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>メニューバーの</span><span lang=EN-US style='font-family:
+Arial'>[Display]-[Layout]</span><span style='font-family:"ＭＳ ゴシック"'>から</span><span
+lang=EN-US style='font-family:Arial'>[1×1] </span><span style='font-family:
+"ＭＳ ゴシック"'>もしくは</span><span lang=EN-US style='font-family:Arial'>[2×2] </span><span
+style='font-family:"ＭＳ ゴシック"'>をクリックするか、またはアイコン</span><span lang=EN-US
+style='font-family:Arial'><img border=0 width=27 height=24
+src="MANUAL_J/IMAGE026.GIF"></span><span style='font-family:"ＭＳ ゴシック"'>もしくは</span><span
+lang=EN-US style='font-family:Arial'><img border=0 width=27 height=24
+src="MANUAL_J/IMAGE035.GIF"></span><span style='font-family:"ＭＳ ゴシック"'>をクリックして指定してください。</span></p>
+
+<p class=MsoNormal style='margin-left:35.45pt;line-height:12.0pt'><span
+lang=EN-US style='font-family:Arial'><img border=0 width=569 height=494
+src="MANUAL_J/IMAGE082.GIF"></span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>図</span><span lang=EN-US style='font-family:Arial'>15
+</span><span style='font-family:"ＭＳ ゴシック"'>表示レイアウトの変更</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;page-break-after:
+auto'><a name="_Toc95566949"><span lang=EN-US style='font-size:12.0pt;
+font-family:Arial;letter-spacing:0pt'>
+
+<hr size=2 width="100%" align=center>
+
+</span></a></div>
+
+<h2><a name="_Toc149107999"><b><span lang=EN-US>15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b></a><b><span
+style='font-family:"ＭＳ Ｐゴシック"'>擬似カラー表示</span></b></h2>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>グレースケール（モノクロ）画像を表示する場合、表示形式を、通常表示と擬似カラー表示の２種類から選択して指定することができます。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'>アイコン</span><span lang=EN-US
+style='font-family:Arial'><img border=0 width=27 height=24
+src="MANUAL_J/IMAGE060.JPG"></span><span style='font-family:"ＭＳ ゴシック"'>をクリックして指定してください。</span></p>
+
+<p class=MsoNormal style='margin-left:35.45pt;line-height:12.0pt'><span
+lang=EN-US style='font-family:Arial'><img border=0 width=569 height=475
+src="MANUAL_J/IMAGE061.JPG"></span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>図</span><span lang=EN-US style='font-family:Arial'>16
+</span><span style='font-family:"ＭＳ ゴシック"'>表示形式の変更</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;page-break-after:
+auto'><a name="_Toc95566949"><span lang=EN-US style='font-size:12.0pt;
+font-family:Arial;letter-spacing:0pt'>
+
+<hr size=2 width="100%" align=center>
+
+</span></a></div>
+
+
+<h2><a name="_Toc149108000"><b><span lang=EN-US>16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b></a><b><span
+style='font-family:"ＭＳ Ｐゴシック"'>バージョン情報</span></b></h2>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>メニューバーから</span><span lang=EN-US style='font-family:
+Arial'>[Help]-[Version]</span><span style='font-family:"ＭＳ ゴシック"'>を選択すると、バージョン情報が表示されます。</span></p>
+
+<p class=MsoNormal style='margin-left:35.45pt;line-height:12.0pt'><span
+lang=EN-US style='font-family:Arial'><img border=0 width=417 height=135
+src="MANUAL_J/IMAGE056.JPG"></span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>図</span><span lang=EN-US style='font-family:Arial'>17
+</span><span style='font-family:"ＭＳ ゴシック"'>バージョン情報</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;page-break-after:
+auto'><a name="_Toc95566950"><span lang=EN-US style='font-size:12.0pt;
+font-family:Arial;letter-spacing:0pt'>
+
+<hr size=2 width="100%" align=center>
+
+</span></a></div>
+
+<h2><a name="_Toc149108001"><b><span lang=EN-US>17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b></a><b><span
+style='font-family:"ＭＳ Ｐゴシック"'>ヘルプ（使用説明書）</span></b></h2>
+
+<p class=MsoNormal style='margin-left:35.45pt;line-height:18.0pt;page-break-after:
+auto'><span style='font-family:"ＭＳ Ｐゴシック"'>メニューバーから</span><span lang=EN-US
+style='font-family:Arial'>[Help]-[Manual]</span><span style='font-family:"ＭＳ Ｐゴシック"'>を選択すると、</span><span
+lang=EN-US style='font-family:Arial'>DICOM VIEWER</span><span style='font-family:
+"ＭＳ Ｐゴシック"'>のヘルプ（使用説明書）が表示されます。</span></p>
+
+<p class=MsoNormal style='margin-left:35.45pt;line-height:12.0pt'><span
+lang=EN-US style='font-family:Arial'><img border=0 width=432 height=329
+src="MANUAL_J/IMAGE058.JPG"></span></p>
+
+<p class=MsoNormal style='margin-left:35.45pt;line-height:18.0pt;page-break-after:
+auto'><span style='font-family:"ＭＳ Ｐゴシック"'>図</span><span lang=EN-US
+style='font-family:Arial'>18 </span><span style='font-family:"ＭＳ Ｐゴシック"'>ヘルプ</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;page-break-after:
+auto'><a name="_Toc95566951"><span lang=EN-US style='font-size:12.0pt;
+font-family:Arial;letter-spacing:0pt'>
+
+<hr size=2 width="100%" align=center>
+
+</span></a></div>
+
+<h2><a name="_Toc149108002"><b><span lang=EN-US>18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DICOM
+VIEWER</span></b></a><b><span style='font-family:"ＭＳ Ｐゴシック"'>の終了</span></b></h2>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>メニューバーから</span><span lang=EN-US style='font-family:
+Arial'>[File]-[Quit]</span><span style='font-family:"ＭＳ ゴシック"'>をクリックしてください。（アイコン</span><span
+lang=EN-US style='font-family:Arial'><img border=0 width=18 height=19
+src="MANUAL_J/IMAGE039.GIF"></span><span style='font-family:"ＭＳ ゴシック"'>では終了できません。）</span></p>
+
+<p class=MsoNormal style='margin-left:35.45pt;line-height:12.0pt'><span
+lang=EN-US style='font-family:Arial'><img border=0 width=312 height=163
+src="MANUAL_J/IMAGE043.JPG"></span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>図</span><span lang=EN-US style='font-family:Arial'>19
+DICOM VIEWER</span><span style='font-family:"ＭＳ ゴシック"'>の終了</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;page-break-after:
+auto'><a name="_Toc95566952"><span lang=EN-US style='font-size:12.0pt;
+font-family:Arial;letter-spacing:0pt'>
+
+<hr size=2 width="100%" align=center>
+
+</span></a></div>
+
+<h2><a name="_Toc149108003"><b><span lang=EN-US>20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b></a><b><span
+style='font-family:"ＭＳ Ｐゴシック"'>画面のコピーについて</span></b></h2>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+lang=EN-US style='font-family:Arial'>DICOM VIEWER</span><span style='font-family:
+"ＭＳ ゴシック"'>は、画像を印刷したり画像データを出力したりする機能を含んでいません。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+lang=EN-US style='font-family:Arial'>DICOM VIEWER</span><span style='font-family:
+"ＭＳ ゴシック"'>の画像の印刷やデータ保存を行うには、画面にコピーしたい画像を表示しておいて、キーボードから</span><span
+lang=EN-US style='font-family:Arial'>[Print Screen]</span><span
+style='font-family:"ＭＳ ゴシック"'>（全画面をコピー）または</span><span lang=EN-US
+style='font-family:Arial'>[Alt]</span><span style='font-family:"ＭＳ ゴシック"'>＋</span><span
+lang=EN-US style='font-family:Arial'>[Print Screen]</span><span
+style='font-family:"ＭＳ ゴシック"'>（アクティブなウィンドウをコピー）を押してください。（</span><span
+lang=EN-US style='font-family:Arial'>[Alt]</span><span style='font-family:"ＭＳ ゴシック"'>＋</span><span
+lang=EN-US style='font-family:Arial'>[Print Screen]</span><span
+style='font-family:"ＭＳ ゴシック"'>は</span><span lang=EN-US style='font-family:Arial'>[Alt]</span><span
+style='font-family:"ＭＳ ゴシック"'>を押しながら</span><span lang=EN-US style='font-family:
+Arial'>[Print Screen]</span><span style='font-family:"ＭＳ ゴシック"'>を押します。）画面のキャプチャー画像がクリップボードにコピーされますので、これをペイントなどの画像処理プログラムに引き渡して利用してください。</span></p>
+
+<div class=MsoNormal align=center style='text-align:center;page-break-after:
+auto'><a name="_Toc95566953"><span lang=EN-US style='font-size:12.0pt;
+font-family:Arial;letter-spacing:0pt'>
+
+<hr size=2 width="100%" align=center>
+
+</span></a></div>
+
+<h2><a name="_Toc149108004"><b><span lang=EN-US>21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DICOM
+VIEWER</span></b></a><b><span style='font-family:"ＭＳ Ｐゴシック"'>のエラーメッセージ</span></b></h2>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>エラーメッセージ</span><span style='font-family:"ＭＳ ゴシック"'>が表示された場合の現象と対処方法を示します。</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:Arial'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+style='font-family:"ＭＳ ゴシック"'>表</span><span style='font-family:Arial'>4 </span><span
+style='font-family:"ＭＳ ゴシック"'>エラーメッセージ</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=594
+ style='width:445.2pt;margin-left:42.15pt;border-collapse:collapse;border:none'>
+ <tr style='page-break-inside:avoid'>
+  <td width=252 valign=top style='width:189.0pt;border:solid windowtext 1.0pt;
+  padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='line-height:17.0pt;page-break-after:auto'><b><span
+  style='font-family:"ＭＳ ゴシック"'>エラーメッセージ</span></b></p>
+  </td>
+  <td width=342 valign=top style='width:256.2pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='line-height:17.0pt;page-break-after:auto'><b><span
+  style='font-family:"ＭＳ ゴシック"'>現象と対処方法</span></b></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=252 valign=top style='width:189.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='line-height:17.0pt;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>Can't</span><span
+  lang=EN-US style='font-family:Arial'> read! Don't find Image data.</span></p>
+  </td>
+  <td width=342 valign=top style='width:256.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='line-height:17.0pt;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial'>Patient Selector</span><span
+  style='font-family:"ＭＳ Ｐゴシック"'>ダイアログでシリーズを選択した時に、該当する</span><span lang=EN-US
+  style='font-family:Arial'>DICOM</span><span style='font-family:"ＭＳ Ｐゴシック"'>画像ファイルが</span><span
+  lang=EN-US style='font-family:Arial'>CD-R/CD-RW</span><span style='font-family:
+  "ＭＳ Ｐゴシック"'>上に無い場合に表示されます。</span></p>
+  <p class=MsoNormal style='line-height:17.0pt;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial'>CD-R/CD-RW</span><span style='font-family:
+  "ＭＳ Ｐゴシック"'>メディアをドライブから取り出している場合は、再度ドライブに挿入してください。</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid'>
+  <td width=252 valign=top style='width:189.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='line-height:17.0pt;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial'>Can't read! Can't read the files which
+  size is different from at the same time.</span></p>
+  </td>
+  <td width=342 valign=top style='width:256.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='line-height:17.0pt;page-break-after:auto'><span
+  style='font-family:Arial;letter-spacing:0pt'>[File]-[Open DICOM file]</span><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>を選択して、画像ファイルを個別に選択してオープンする場合で、</span><span
+  style='font-family:Arial;letter-spacing:0pt'>[Shift]</span><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>キーもしくは、</span><span
+  style='font-family:Arial;letter-spacing:0pt'>[Ctrl]</span><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>キーを押しながら複数の</span><span
+  style='font-family:Arial;letter-spacing:0pt'>DICOM</span><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>ファイルを選択した場合、選択したファイル中に異なる画像マトリックスファイルが有る場合に表示されます。再度ファイル選択を行ってください。</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid;height:123.6pt'>
+  <td width=252 valign=top style='width:189.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 5.4pt 0mm 5.4pt;height:123.6pt'>
+  <p class=MsoNormal style='line-height:17.0pt;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial'>Can't read DICOM Image.</span></p>
+  </td>
+  <td width=342 valign=top style='width:256.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 5.4pt 0mm 5.4pt;height:123.6pt'>
+  <p class=MsoNormal style='line-height:17.0pt;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial'>Patient Selector</span><span
+  style='font-family:"ＭＳ Ｐゴシック"'>ダイアログで</span><span style='font-family:"ＭＳ Ｐゴシック";
+  letter-spacing:0pt'>シリーズを選択した時（もしくは、</span><span lang=EN-US style='font-family:
+  Arial'>[File]-[Open DICOM file]</span><span style='font-family:"ＭＳ Ｐゴシック"'>メニューから</span><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>ファイルを開こうとした時</span><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>)</span><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>、次の事象が発生すると表示されます。</span></p>
+  <p class=MsoNormal style='margin-left:14.85pt;text-indent:-14.15pt;
+  line-height:17.0pt;page-break-after:auto;vertical-align:baseline'><span
+  lang=EN-US style='font-family:Wingdings;letter-spacing:0pt'>&#159;<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>該当する</span><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>DICOM</span><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>ファイルが</span><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>DICOM</span><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>形式のファイルではない場合</span></p>
+  <p class=MsoNormal style='margin-left:14.85pt;text-indent:-14.15pt;
+  line-height:17.0pt;page-break-after:auto;vertical-align:baseline'><span
+  lang=EN-US style='font-family:Wingdings;letter-spacing:0pt'>&#159;<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>ファイルが壊れている場合</span></p>
+  <p class=MsoNormal style='margin-left:14.85pt;text-indent:-14.15pt;
+  line-height:17.0pt;page-break-after:auto;vertical-align:baseline'><span
+  lang=EN-US style='font-family:Wingdings;letter-spacing:0pt'>&#159;<span
+  style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+  lang=EN-US style='font-family:Arial;letter-spacing:0pt'>CD-R/CD-RW</span><span
+  style='font-family:"ＭＳ Ｐゴシック";letter-spacing:0pt'>メディアが破損している場合</span></p>
+  </td>
+ </tr>
+ <tr style='page-break-inside:avoid;height:59.55pt'>
+  <td width=252 valign=top style='width:189.0pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0mm 5.4pt 0mm 5.4pt;height:59.55pt'>
+  <p class=MsoNormal style='line-height:17.0pt;page-break-after:auto'><span
+  lang=EN-US style='font-family:Arial'>This image is not generated by Hitachi
+  MRI System.</span></p>
+  </td>
+  <td width=342 valign=top style='width:256.2pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0mm 5.4pt 0mm 5.4pt;height:59.55pt'>
+  <p class=MsoNormal style='line-height:17.0pt;page-break-after:auto'><span
+  style='font-family:"ＭＳ Ｐゴシック"'>指定された画像が弊社</span><span lang=EN-US
+  style='font-family:Arial'>MRI</span><span style='font-family:"ＭＳ Ｐゴシック"'>によってアーカイブされたものでない場合に表示されます。弊社</span><span
+  lang=EN-US style='font-family:Arial'>MRI</span><span style='font-family:"ＭＳ Ｐゴシック"'>によってアーカイブされたもののみ選択してください。</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0mm;margin-right:30.35pt;margin-bottom:
+0mm;margin-left:35.45pt;margin-bottom:.0001pt;line-height:18.0pt'><span
+lang=EN-US style='font-family:Arial'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>
